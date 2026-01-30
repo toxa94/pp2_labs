@@ -1,2 +1,0 @@
-#home
-print("Hello, World!")
