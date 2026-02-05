@@ -1,4 +1,4 @@
-# Practice-02
+# Lab_2
 
 This practice is focused on control flow and logical structures in Python.
 
@@ -9,4 +9,3 @@ Topics covered in this practice:
 - Loops (for and while)
 
 The practice contains clear examples to help understand decision-making and repetition in Python programs
-
