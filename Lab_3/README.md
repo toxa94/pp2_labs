@@ -1,4 +1,4 @@
-# Practice-03
+# Lab_03
 
 This repository is designed to help learn the core concepts of the Python programming language:
 
