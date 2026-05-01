@@ -13,8 +13,9 @@ font_big = pygame.font.SysFont(None, 40)
 font_small = pygame.font.SysFont(None, 28)
 
 playlist = [
-    "music/Let it happen.wav",
-    "music/NEW PERSON,SAME MISTAKES.wav"
+    "Lab_9/music_player/music/Let it happen.wav",
+    "Lab_9/music_player/music/Let it happen.wav",
+    "Lab_9/music_player/music/NEW PERSON,SAME MISTAKES.wav"
 ]
 
 player = MusicPlayer(playlist)
