@@ -10,7 +10,7 @@ def get_image(path):
     global _image_library 
     image = _image_library.get(path)
     if image == None:
-        canonicalized_path = path.replace("/",os.sep).replace("\\",os.sep)
+        canonicalized_path = path.replace("/",os.sep).replace("//",os.sep)
         image = pygame.image.load(canonicalized_path)
         _image_library[canonicalized_path] = image
     return image
@@ -26,7 +26,7 @@ done = False
 
 screen = pygame.display.set_mode((1200,800))
 w , h = screen.get_size()
-bg = pygame.transform.scale(get_image("C:/Users/makha/OneDrive/Desktop/pp2/w99/img/mainclock.png"), (w,h))
+bg = pygame.transform.scale(get_image("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_9/mickeys_clock/images/mainclock.png"), (w,h))
 pygame.display.set_caption("Mickey's Clock")
 
 
@@ -46,8 +46,8 @@ while not done :
     pos = (screen.get_width()/2 , screen.get_height()/2 )
     screen.blit( bg , (0,0) )
 
-    Rotate(screen , get_image("C:/Users/makha/OneDrive/Desktop/pp2/w99/img/leftarm.png") , pos ,angle_sec )
-    Rotate(screen , get_image("C:/Users/makha/OneDrive/Desktop/pp2/w99/img/rightarm.png"), pos , angle_min)
+    Rotate(screen , get_image("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_9/mickeys_clock/images/leftarm.png") , pos ,angle_sec )
+    Rotate(screen , get_image("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_9/mickeys_clock/images/rightarm.png"), pos , angle_min)
     angle_min = -6*minutes-50
     angle_sec = -6*seconds
     pygame.display.flip()
