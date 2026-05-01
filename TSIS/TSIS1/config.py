@@ -2,10 +2,10 @@
 # Update these values to match your PostgreSQL setup
 
 DB_CONFIG = {
-    "host":     "localhost",
-    "port":     5432,
-    "dbname":   "phonebook_db",
-    "user":     "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "dbname": "phonebook_db",
+    "user": "postgres",
     "password": "123456",
 }
 

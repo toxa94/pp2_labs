@@ -2,6 +2,9 @@
 # Requires: psycopg2, Python 3.8+
 # Run: python phonebook.py
 
+import os
+os.environ['LANG'] = 'en_US.UTF-8'
+
 import csv
 import json
 import sys
@@ -64,7 +67,7 @@ def init_db():
         with conn:
             with get_cursor(conn) as cur:
                 for filename in ("schema.sql", "procedures.sql"):
-                    with open(filename, "r") as fh:
+                    with open(f"TSIS/TSIS1/{filename}", "r") as fh:
                         sql = fh.read()
                     cur.execute(sql)
         print("✓ Database initialised (schema + procedures applied).")

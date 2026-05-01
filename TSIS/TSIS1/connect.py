@@ -7,7 +7,9 @@ from config import DB_CONFIG
 
 def get_connection():
     """Return a new psycopg2 connection using settings from config.py."""
-    return psycopg2.connect(**DB_CONFIG)
+    conn = psycopg2.connect(**DB_CONFIG)
+    conn.set_client_encoding('utf-8')
+    return conn
 
 
 def get_cursor(conn):
