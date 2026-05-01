@@ -38,7 +38,7 @@ font_small = pygame.font.SysFont("Verdana", 18)
 game_over_text = font.render("Game Over", True, black)
 
 # ── Фон ──────────────────────────────────────────────────────────────────────
-background = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/AnimatedStreet.png")
+background = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/AnimatedStreet.png")
 
 # ── Экран ────────────────────────────────────────────────────────────────────
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -53,7 +53,7 @@ loop  = True
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/Enemy.png")
+        self.image = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/Enemy.png")
         self.rect  = self.image.get_rect()
         self.rect.center = (random.randint(40, screen_width - 40), -20)
 
@@ -70,7 +70,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/Player.png")
+        self.image = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/Player.png")
         self.rect  = self.image.get_rect()
         self.rect.center = (160, 520)
 
@@ -216,7 +216,7 @@ while loop:
     # ── Проверка столкновения с врагом → Game Over ────────────────────────────
     if pygame.sprite.spritecollideany(P1, enemies):
         try:
-            pygame.mixer.Sound("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/sound/crash.wav").play()
+            pygame.mixer.Sound("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/sound/crash.wav").play()
         except Exception:
             pass
         time.sleep(1)
@@ -244,7 +244,7 @@ while loop:
             coin_score += hit.value
 
         try:
-            pygame.mixer.Sound("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/sound/getcoin.mp3").play()
+            pygame.mixer.Sound("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/sound/getcoin.mp3").play()
         except Exception:
             pass
 
