@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice@gmail.com",
+    "birthday": "1990-04-15",
+    "created_at": "2024-01-10T09:30:00",
+    "group_name": "Friend",
+    "phone_list": [
+      { "phone": "+1-555-0101", "type": "mobile" },
+      { "phone": "+1-555-0199", "type": "home" }
+    ]
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob.smith@work.com",
+    "birthday": "1985-07-22",
+    "created_at": "2024-01-11T10:00:00",
+    "group_name": "Work",
+    "phone_list": [
+      { "phone": "+1-555-0202", "type": "work" }
+    ]
+  },
+  {
+    "name": "Carol Williams",
+    "email": "carol@gmail.com",
+    "birthday": "1992-01-08",
+    "created_at": "2024-01-12T11:15:00",
+    "group_name": "Family",
+    "phone_list": [
+      { "phone": "+1-555-0303", "type": "home" },
+      { "phone": "+1-555-0311", "type": "mobile" }
+    ]
+  },
+  {
+    "name": "David Brown",
+    "email": "david.b@yahoo.com",
+    "birthday": "1988-11-30",
+    "created_at": "2024-01-13T08:45:00",
+    "group_name": "Friend",
+    "phone_list": [
+      { "phone": "+1-555-0404", "type": "mobile" }
+    ]
+  }
+]

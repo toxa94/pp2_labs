@@ -1,0 +1,9 @@
+name,phone,type,email,birthday,group
+Alice Johnson,+1-555-0101,mobile,alice@gmail.com,1990-04-15,Friend
+Bob Smith,+1-555-0202,work,bob.smith@work.com,1985-07-22,Work
+Carol Williams,+1-555-0303,home,carol@gmail.com,1992-01-08,Family
+David Brown,+1-555-0404,mobile,david.b@yahoo.com,1988-11-30,Friend
+Eve Davis,+1-555-0505,work,eve@company.org,1995-03-17,Work
+Frank Miller,+1-555-0606,home,frank.m@gmail.com,1980-09-05,Family
+Grace Wilson,+1-555-0707,mobile,grace@hotmail.com,1993-06-21,Other
+Henry Moore,+1-555-0808,work,h.moore@corp.com,1987-12-14,Work
