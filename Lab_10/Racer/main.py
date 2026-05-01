@@ -35,7 +35,7 @@ game_over = font.render("Game Over", True, black)
 
 
 #bg image
-background = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/AnimatedStreet.png")
+background = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/AnimatedStreet.png")
 
 
 #screen and frame counter
@@ -49,7 +49,7 @@ loop = True
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/Enemy.png")
+        self.image = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/Enemy.png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, screen_width - 40), -20)
     def move(self):
@@ -64,7 +64,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/Player.png")
+        self.image = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/Player.png")
         self.rect = self.image.get_rect()
         self.rect.center = (160,520)
     def move(self):
@@ -80,7 +80,7 @@ class Player(pygame.sprite.Sprite):
 class Coin(pygame.sprite.Sprite):
     def __init__(self, enemy):
         super().__init__()
-        self.image = pygame.image.load("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/img/coin.png")
+        self.image = pygame.image.load("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/img/coin.png")
         self.rect = self.image.get_rect()
         coord_range = list(chain(range(22, enemy.rect.center[0] - 24 - 22), range(enemy.rect.center[0] + 24 + 22, screen_width - 22)))
         #here we create create a range of integer values so that the coin and the enemy's rect's never overlap
@@ -133,7 +133,7 @@ while loop:
     
     #game over screen
     if pygame.sprite.spritecollideany(P1, enemies):
-        pygame.mixer.Sound("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/sound/crash.wav").play()
+        pygame.mixer.Sound("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/sound/crash.wav").play()
         time.sleep(5)
 
         screen.fill(red)
@@ -145,7 +145,7 @@ while loop:
         time.sleep(2)
         pygame.quit()
     if pygame.sprite.spritecollide(P1, coins_group, dokill=True):
-        pygame.mixer.Sound("C:/Users/makha/OneDrive/Desktop/PP2-Practices/Practice-10/Racer/sound/getcoin.mp3").play()
+        pygame.mixer.Sound("C:/Users/sulpa/OneDrive/Рабочий стол/pp2_labs/Lab_10/Racer/sound/getcoin.mp3").play()
         coin_score += 1
         coin = Coin(E1)
         coins_group.add(coin)
