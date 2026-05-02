@@ -278,7 +278,7 @@ class EnemyCar:
     def update(self, dt: float, scroll_speed: float) -> None:
         # Enemy moves with the road scroll + its own relative speed.
         # scroll_speed is in pixels/frame; self.speed is pixels/second.
-        self.y += scroll_speed + self.speed * dt
+        self.y += scroll_speed + self.speed * dt 
 
     def rect(self) -> pygame.Rect:
         return pygame.Rect(
