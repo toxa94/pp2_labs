@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Alice Smith",
+    "email": "alice@gmail.com",
+    "birthday": "1990-05-12",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77011234567",
+        "type": "mobile"
+      },
+      {
+        "phone": "+77019876543",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "name": "Bob Johnson",
+    "email": "bob@work.com",
+    "birthday": "1985-11-30",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77022345678",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Carol White",
+    "email": "carol@gmail.com",
+    "birthday": "1993-03-22",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77033456789",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "David Brown",
+    "email": "david@yahoo.com",
+    "birthday": "1978-07-04",
+    "group": "Other",
+    "phones": [
+      {
+        "phone": "+77044567890",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "name": "Eva Green",
+    "email": "eva@work.com",
+    "birthday": "1995-01-15",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77055678901",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Toktar",
+    "email": "toktar@gmail.com",
+    "birthday": "2008-12-01",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "123123",
+        "type": "mobile"
+      },
+      {
+        "phone": "123",
+        "type": "home"
+      }
+    ]
+  }
+]
